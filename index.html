@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/LogoNegro.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Avanty</title>
+</head>
+<body>
+    <img id="imagenInicio" src="img/imagenInicio.png" class="imagenIni">
+
+    <header class="header">
+        <nav>
+            <a href="#ini" class="lateral"></a>
+            <a href="#ser" class="lateral"></a>
+            <a href="#clien" class="lateral"></a>
+            <a href="#contac" class="lateral"></a>
+            <a href="#blo" class="lateral"></a>
+        </nav>
+    </header>
+
+    <button class="botonWha">
+        <img src="img/WhatsApp.png">
+    </button>
+
+    <section class="inicio" id="ini">
+        <div class="contenedor_Principal">
+            <img class="logoPrincipal" src="img/Blanco.png">
+            <div class="secciones">
+                <a href="#ser" class="link_Servicios">Servicios</a>
+                <a href="#clien" class="link_Clientes">Clientes</a>
+                <a href="#contac"  class="link_Contacto">Contacto</a>
+                <a href="#blo" class="link_Blog">Blog</a>
+            </div>
+        </div>
+    </section>
+    <section class="servicios" id="ser">
+        <div class="tit">
+            <h2 class="tituloP_Ser">Servicios</h2>
+        </div>
+        <div class="contenedorGrande">
+            <div class="contenedorPeque">
+                <i class='bx bxs-megaphone'></i>
+                <p class="tituloSer">Creación de estrategias de comunicación y mercadeo</p>
+                <p class="descripcionSer">Generamos estrategias digitales y análogas poderosas para destacar tu marca y conectarte con tu audiencia.</p>
+            </div>
+            <div class="contenedorPeque">
+                <i class='bx bxs-camera'></i>
+                <p class="tituloSer">Creación de contenido multimedia</p>
+                <p class="descripcionSer">Producimos contenido gráfico, audiovisual, textual y de locución que cuenta historias de maneras increíbles y resaltan tu identidad de marca.</p>
+            </div>
+            <div class="contenedorPeque">
+                <span class="material-symbols-outlined">lightbulb</span>
+                <p class="tituloSer">Creación de campañas marca y posicionamiento</p>
+                <p class="descripcionSer">Te ayudamos a posicionar tu marca en la mente del consumidor a través de campañas en redes y medios.</p>
+            </div>
+            <div class="contenedorPeque">
+                <i class='bx bxl-tiktok'></i>
+                <p class="tituloSer">Manejo integral de redes sociales</p>
+                <p class="descripcionSer">Contamos con los mejores community manager para gestionar tus cuentas y potenciar tu empresa.</p>
+            </div>
+            <div class="contenedorPeque">
+                <span class="material-symbols-outlined">attach_money</span>
+                <p class="tituloSer">Creación de estrategias de pauta digital</p>
+                <p class="descripcionSer">Maximizando tu presencia digital y los servicios que ofreces con campañas publicitarias personalizadas para tu audiencia.</p>
+            </div>
+            <div class="contenedorPeque">
+                <i class='bx bxs-pencil'></i>
+                <p class="tituloSer">Asesorías, capacitaciones y talleres en comunicación y mercadeo</p>
+                <p class="descripcionSer">Contamos con espacios de formación para que aprendas a consolidar tus planes de comunicación y ventas.</p>
+            </div>
+        </div>
+    </section>
+    <section class="clientes" id="clien">
+        <div class="c1">
+            <p class="tituloClientes">Clientes</p>
+            <p class="descripcionClientes">Encuentra un amplio portafolio de servicios que se ajustan a tus necesidades.</p>
+        </div>
+
+        <div class="c2">
+            <button class="prev" onclick="changeSlide(-1)"><i class='bx bx-chevron-left'></i></button>
+            <div class="slider">
+                <div class="cliente">
+                    <img src="img/mercadeo.jpg" class="imgCliente">
+                    <div class="testimonio">
+                    <p class="tituloTesti">CAMPAÑAS DE MARKETING POLÍTICO</p>
+                    <p>Generación e implementación de estrategia digital para candidaturas de alcaldías locales en municipios de Colombia.</p> 
+                    </div>
+                </div>
+
+                <div class="cliente">
+                    <img src="img/redes.jpg" class="imgCliente">
+                    <div class="testimonio">
+                    <p class="tituloTesti">MANEJO DE REDES SOCIALES</p>
+                    <p>Creación de contenido multimedia, desarrollo y activación de campañas publicitarias, gestión de free press, dirección de campañas de lanzamiento de productos.</p> 
+                    </div>
+                </div>
+
+                <div class="cliente">
+                    <img src="img/talleres.jpg" class="imgCliente">
+                    <div class="testimonio">
+                    <p class="tituloTesti">TALLERES DE FORMACIÓN</p>
+                    <p>Capacitamos a equipos para el manejo de estrategias de comunicación y mercadeo.</p> 
+                    </div>
+                </div>
+
+            </div>
+            <button class="next" onclick="changeSlide(1)"><i class='bx bx-chevron-right'></i></button>
+        </div> 
+    </section>
+    <section class="cta" id="contac">
+        <div class="contenidoCta">
+            <div class="ctaIzquierda">
+                <p class="tituloCta">¿Tienes preguntas o quieres cotizar un servicio?</p>
+                <p class="textoCta">Haz clic en el botón y encuentra la asesoría que buscas.</p>
+                <button class="botonCta">Contáctanos</button>
+            </div>
+            <div class="ctaDerecha">
+                <img class="imagenCta" src="img/Anteojos.png" >
+            </div>
+        </div>
+    </section>
+    <section class="blog" id="blo">
+        <div class="articu">
+            <p class="tituloArti">Artículos</p>
+            <div class="wrapper">
+                <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/publicidad-scaled.jpg" alt="img" draggable="false"></div>
+                    <p class="fechaArt"> 26 Nov 2023</p>
+                    <p class="tituloArt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                </ul>
+            </div>
+            <i class='bx bx-left-arrow-alt' id="left" ></i>
+            <i class='bx bx-right-arrow-alt' id="right" ></i>
+        </div>
+    </section>
+    <footer>
+        <div class="redirecciones">
+            <a href="#ini">Inicio</a>
+            <a href="#ser">Servicios</a>
+            <a href="#clien">Clientes</a>
+            <a href="#blo">Blog</a>
+        </div>
+        <div class="redesSociales1">
+            <button class="Ig">
+                <i class='bx bxl-instagram'></i>
+            </button>
+            <button class="Face">
+                <i class='bx bxl-facebook'></i>
+            </button>
+            <button class="Gmail">
+                <i class='bx bxl-gmail'></i>
+            </button>
+            <button class="Link">
+                <i class='bx bxl-linkedin'></i>
+            </button>
+            <button class="Tik">
+                <i class='bx bxl-tiktok'></i>
+            </button>
+        </div>
+        <div class="logoBlanco">
+            <img src="img/Negro.png" class="imgFooter">
+        </div>
+    </footer>
+    <div class="derechos">
+        <p class="copy"><i class='bx bx-copyright'></i>2024 Sofia Quimbay.Todos los derechos reservados</p>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
